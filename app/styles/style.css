@@ -1,0 +1,159 @@
+@import "./globals.css";
+@import "./variables.css";
+@import "./components.css";
+
+body {
+  font-family: var(--font-body);
+}
+
+/* logo center */
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: min(5vh, 3rem);
+}
+
+.logo {
+  outline-offset: 0.25rem;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.logo:focus {
+  outline: 0.15rem dotted;
+}
+
+/* text content */
+.text-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.text-content__heading {
+  font-size: var(--step-4);
+  font-weight: var(--fw-light);
+  transition: 150ms ease;
+}
+
+.text-bold {
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+}
+
+.text-content__para {
+  margin-block: 1rem;
+  font-size: var(--step-0);
+  transition: 150ms ease;
+}
+
+/* form */
+.form {
+  padding: 1rem;
+}
+
+.form__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+/* image */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+}
+
+.image-dashboard {
+  max-width: 100%;
+}
+
+/* footer */
+.footer {
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: var(--step--1);
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 1rem;
+}
+
+.footer__social-icon {
+  color: var(--primary-blue);
+  font-size: var(--step-1);
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline-offset: 0.125rem;
+  transition: 150ms ease;
+  transition-property: background-color, color, scale;
+}
+
+.footer__social-icon:hover {
+  background-color: var(--primary-blue);
+  color: var(--neutral-white);
+}
+
+.footer__social-icon:active {
+  scale: 0.985;
+}
+
+.footer__social-icon:focus {
+  outline: 0.125rem solid black;
+}
+
+/* screens */
+@media (width > 50rem) {
+  .form {
+    padding-inline: 20rem;
+  }
+
+  .form__flex {
+    flex-direction: row;
+  }
+
+  .image-dashboard {
+    max-width: 40rem;
+  }
+}
+
+.emailError {
+  color: var(--secondary-light-red);
+  display: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--step-0);
+  text-align: left;
+  margin-block: 0.35rem;
+  margin-left: 0.25rem;
+}
+
+.inputError {
+  border: 2px solid var(--secondary-light-red);
+}
+
+.emailSuccess {
+  color: var(--success-green);
+  display: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--step-0);
+  text-align: left;
+  margin-block: 0.35rem;
+  margin-left: 0.25rem;
+}

@@ -1,0 +1,27 @@
+:root {
+  --font-body: "Libre Franklin", sans-serif;
+
+  --fw-light: 300;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --primary-blue: hsl(223, 87%, 63%);
+
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red: hsl(354, 100%, 66%);
+
+  --success-green: hsl(173, 70%, 35%);
+
+  --neutral-grey: hsl(0, 0%, 59%);
+  --neutral-very-dark-blue: hsl(209, 33%, 12%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --step--2: clamp(0.7813rem, 0.7191rem + 0.3109vi, 0.96rem);
+  --step--1: clamp(0.9375rem, 0.8462rem + 0.4565vi, 1.2rem);
+  --step-0: clamp(1.125rem, 0.9946rem + 0.6522vi, 1.5rem);
+  --step-1: clamp(1.35rem, 1.1674rem + 0.913vi, 1.875rem);
+  --step-2: clamp(1.62rem, 1.3683rem + 1.2587vi, 2.3438rem);
+  --step-3: clamp(1.944rem, 1.6012rem + 1.7142vi, 2.9297rem);
+  --step-4: clamp(2.3328rem, 1.8704rem + 2.3118vi, 3.6621rem);
+  --step-5: clamp(2.7994rem, 2.1808rem + 3.0927vi, 4.5776rem);
+}

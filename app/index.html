@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <div class="logo-center">
+          <a
+            href="index.html"
+            class="logo"
+            role="link"
+            aria-hidden="false"
+            aria-label="home link"
+          >
+            <img
+              src="images/logo.svg"
+              role="img"
+              alt="Logo Of Ping"
+              class="logo__image"
+            />
+          </a>
+        </div>
+        <section class="text-content">
+          <h1 class="text-content__heading">
+            We are launching <span class="text-bold">soon!</span>
+          </h1>
+          <p class="text-content__para">Subscribe and get notified</p>
+          <form action="index.html" id="form" class="form" novalidate>
+            <p class="emailError">Please enter a valid email address</p>
+            <p class="emailSuccess">Success! Keep an eye for the inbox!</p>
+            <div class="form__flex">
+              <input
+                class="form__input-field"
+                type="email"
+                aria-hidden="false"
+                name="email"
+                id="emailInput"
+                placeholder="example@email.com"
+              />
+              <button
+                aria-hidden="false"
+                role="button"
+                class="form__submit"
+                type="submit"
+              >
+                Notify Me
+              </button>
+            </div>
+          </form>
+          <div class="image-wrapper">
+            <img
+              class="image-dashboard"
+              src="images/illustration-dashboard.png"
+              alt="illustration of dashboard"
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__social-icons">
+          <a
+            role="link"
+            aria-hidden="false"
+            aria-label="Facebook"
+            href="#"
+            class="footer__social-icon"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            role="link"
+            aria-hidden="false"
+            aria-label="Twitter"
+            href="#"
+            class="footer__social-icon"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a
+            role="link"
+            aria-hidden="false"
+            aria-label="Instagram"
+            href="#"
+            class="footer__social-icon"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+        <p class="footer__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

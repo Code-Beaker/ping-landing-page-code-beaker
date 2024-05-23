@@ -1,0 +1,56 @@
+.form__input-field {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5rem;
+  width: 100%;
+  min-width: fit-content;
+  max-width: 100%;
+  border: 0.15rem solid var(--secondary-pale-blue);
+  font-size: var(--step-0);
+  transition: 150ms ease;
+}
+
+.form__input-field:focus {
+  outline: none;
+  border-width: 0.25rem;
+}
+
+.form__submit {
+  padding: 0.75rem 1.75rem;
+  min-width: fit-content;
+  border-radius: 5rem;
+  width: 100%;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  color: var(--neutral-white);
+  background-color: var(--primary-blue);
+  font-size: var(--step-0);
+  transition: 150ms ease;
+  outline-offset: 0.15rem;
+  transition-property: opacity, scale, font-size;
+}
+
+.form__submit:hover {
+  opacity: 0.75;
+}
+
+.form__submit:active {
+  scale: 0.985;
+}
+
+.form__submit:focus {
+  outline: 0.125rem dotted;
+  outline-color: invert;
+}
+
+/* screens */
+@media (width > 40rem) {
+  .form__input-field {
+    max-width: 100%;
+  }
+
+  .form__submit {
+    width: fit-content;
+  }
+}
