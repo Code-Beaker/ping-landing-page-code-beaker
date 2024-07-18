@@ -1,17 +1,25 @@
+.form__label {
+  font-size: var(--step-0);
+  margin-bottom: 1rem;
+  display: block;
+  color: var(--neutral-very-dark-blue);
+}
+
 .form__input-field {
   padding: 0.75rem 1.5rem;
   border-radius: 5rem;
   width: 100%;
   min-width: fit-content;
   max-width: 100%;
+  outline-offset: 0.125rem;
   border: 0.15rem solid var(--secondary-pale-blue);
   font-size: var(--step-0);
-  transition: 150ms ease;
+  /* transition: 150ms ease; */
 }
 
 .form__input-field:focus {
-  outline: none;
-  border-width: 0.25rem;
+  outline: 0.25rem dotted var(--neutral-very-dark-blue);
+  /* border-width: 0.25rem; */
 }
 
 .form__submit {
@@ -40,8 +48,7 @@
 }
 
 .form__submit:focus {
-  outline: 0.125rem dotted;
-  outline-color: invert;
+  outline: 0.25rem dotted var(--neutral-very-dark-blue);
 }
 
 /* screens */
